@@ -1,0 +1,551 @@
+
+--- ERROR: read failed: [Errno 6] Device not configured
+--- Waiting for the device to reconnectV (23002) wifi:tx process: alloc static tx buf, pb=0x3c141160 l=.
+I (850) boot: Loaded app from partition at offset 0x20000
+D (851) boot: Disabling RNG early entropy source...
+D (851) boot: Mapping segment 0 as DROM
+D (852) boot: Mapping segment 3 as IROM
+D (856) boot: calling set_cache_and_start_app
+D (860) boot: configure drom and irom and start
+D (865) boot: start: 0x403757e0
+--- 0x403757e0: call_start_cpu0 at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/port/cpu_start.c:946
+V (879) mmap: after coalescing, 1 regions are left
+D (879) octal_psram: exp_data: 0x5a6b7c8d
+D (879) octal_psram: ref_data: 0x5a6b7c8d
+I (881) octal_psram: vendor id    : 0x0d (AP)
+I (886) octal_psram: dev id       : 0x02 (generation 3)
+I (892) octal_psram: density      : 0x03 (64 Mbit)
+I (897) octal_psram: good-die     : 0x01 (Pass)
+I (902) octal_psram: Latency      : 0x01 (Fixed)
+I (908) octal_psram: VCC          : 0x01 (3V)
+I (913) octal_psram: SRF          : 0x01 (Fast Refresh)
+I (918) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+I (924) octal_psram: BurstLen     : 0x01 (32 Byte)
+I (930) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+I (936) octal_psram: DriveStrength: 0x00 (1/1)
+I (941) esp_psram: Found 8MB PSRAM device
+I (946) esp_psram: Speed: 40MHz
+V mmu_psram: Instructions from flash page8 copy to SPIRAM page0, Offset: 8
+V (1042) mmu_psram: after copy instruction, page_id is 13
+I (1042) mmu_psram: Instructions copied and mapped to SPIRAM
+V (1042) esp_psram: after copy .text, used page is 13, start_page is 13, psram_available_size is 1070510688 B
+V (1052) mmap: found laddr is 0x130000
+V (1056) esp_psram: 8bit-aligned-region: actual_mapped_len is 0x730000 bytes
+V (1063) esp_psram: 8bit-aligned-range: 0x730000 B, starting from: 0x3c130000
+I (1071) cpu_start: Multicore app
+D (1075) cpu_start: Pro cpu up
+D (1078) cpu_start: Starting app cpu, entry point is 0x403756ac
+--- 0x403756ac: call_start_cpu1 at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/port/cpu_start.c:219
+D (0) cpu_start: App cpu up
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 1 access error intr clr & ena mask is: 0x1f
+I (1740) esp_psram: SPI SRAM memory test OK
+D (1749) clk: RTC_SLOW_CLK calibration value: 3333722
+I (1754) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+V CACHE_ERR: illegal error intr clr & ena mask is: 0x3f
+V CACHE_ERR: core 0 access error intr clr & ena mask is: 0x1f
+D (1760) cpu_start: calling init function: 0x42003468 on core: 0
+--- 0x42003468: __esp_system_init_fn_init_efuse_check at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/efuse/src/esp_efuse_startup.c:37
+D (1766) cpu_start: calling init function: 0x42003900 on core: 0
+--- 0x42003900: __esp_system_init_fn_init_show_cpu_freq at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:64
+I (1772) cpu_start: Pro cpu start user code
+I (1777) cpu_start: cpu freq: 240000000 Hz
+D (1782) cpu_start: calling init function: 0x42003398 on core: 0
+--- 0x42003398: __esp_system_init_fn_init_show_app_info at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_app_format/esp_app_desc.c:123
+I (1788) app_init: Application information:
+I (1793) app_init: Project name:     snapclient
+I (1798) app_init: App version:      v0.0.4-2-gf13a7e4-dirty
+I (1804) app_init: Compile time:     Nov 16 2026 20:13:26
+I (1810) app_init: ELF file SHA256:  28c7b955da3335bb...
+I (1816) app_init: ESP-IDF:          v5.5.6
+D (1821) cpu_start: calling init function: 0x4200347c on core: 0
+--- 0x4200347c: __esp_system_init_fn_init_efuse_show_app_info at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/efuse/src/esp_efuse_startup.c:47
+I (1827) efuse_init: Min chip rev:     v0.0
+I (1832) efuse_init: Max chip rev:     v0.99 
+I (1837) efuse_init: Chip rev:         v0.2
+D (1842) cpu_start: calling init function: 0x4200564c on core: 0
+--- 0x4200564c: __esp_system_init_fn_init_heap at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/heap/heap_caps_init.c:29
+V (1848) memory_layout: reserved range is 0x3c123220 - 0x3c123250
+D (1854) memory_layout: Checking 7 reserved memory ranges:
+D (1860) memory_layout: Reserved memory range 0x3c000000 - 0x3e000000
+D (1866) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc9d800
+D (1873) memory_layout: Reserved memory range 0x3fc9d800 - 0x3fca88a0
+D (1879) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000
+D (1886) memory_layout: Reserved memory range 0x40374000 - 0x4038d800
+--- 0x40374000: _WindowOverflow4 at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/xtensa/xtensa_vectors.S:2051
+D (1892) memory_layout: Reserved memory range 0x600fe000 - 0x600fe058
+--- 0x600fe000: _rtc_code_start at :?
+D (1899) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000
+D (1905) memory_layout: Building list of available memory regions:
+V (1912) memory_layout: Examining memory region 0x3fc88000 - 0x3fc90000
+V (1918) memory_layout: Region 0x3fc88000 - 0x3fc90000 inside of reserved 0x3fc84000 - 0x3fc9d800
+V (1927) memory_layout: Examining memory region 0x3fc90000 - 0x3fca0000
+V (1934) memory_layout: Start of region 0x3fc90000 - 0x3fca0000 overlaps reserved 0x3fc84000 - 0x3fc9d800
+V (1944) memory_layout: Region 0x3fc9d800 - 0x3fca0000 inside of reserved 0x3fc9d800 - 0x3fca88a0
+V (1953) memory_layout: Examining memory region 0x3fca0000 - 0x3fcb0000
+V (1959) memory_layout: Start of region 0x3fca0000 - 0x3fcb0000 overlaps reserved 0x3fc9d800 - 0x3fca88a0
+D (1969) memory_layout: Available memory region 0x3fca88a0 - 0x3fcb0000
+V (1976) memory_layout: Examining memory region 0x3fcb0000 - 0x3fcc0000
+D (1982) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000
+V (1989) memory_layout: Examining memory region 0x3fcc0000 - 0x3fcd0000
+D (1996) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000
+V (2002) memory_layout: Examining memory region 0x3fcd0000 - 0x3fce0000
+D (2009) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000
+V (2016) memory_layout: Examining memory region 0x3fce0000 - 0x3fce9710
+D (2022) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710
+V (2029) memory_layout: Examining memory region 0x3fce9710 - 0x3fcf0000
+V (2036) memory_layout: End of region 0x3fce9710 - 0x3fcf0000 overlaps reserved 0x3fceee34 - 0x3fcf0000
+D (2045) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34
+V (2052) memory_layout: Examining memory region 0x3fcf0000 - 0x3fcf8000
+D (2059) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000
+V (2065) memory_layout: Examining memory region 0x3c000000 - 0x3e000000
+V (2072) memory_layout: Region 0x3c000000 - 0x3e000000 inside of reserved 0x3c000000 - 0x3e000000
+V (2081) memory_layout: Examining memory region 0x600fe000 - 0x60100000
+--- 0x600fe000: _rtc_code_start at :?
+V (2087) memory_layout: Start of region 0x600fe000 - 0x60100000 overlaps reserved 0x600fe000 - 0x600fe058
+--- 0x600fe000: _rtc_code_start at :?
+--- 0x600fe000: _rtc_code_start at :?
+V (2097) memory_layout: End of region 0x600fe058 - 0x60100000 overlaps reserved 0x600fffe8 - 0x60100000
+D (2107) memory_layout: Available memory region 0x600fe058 - 0x600fffe8
+I (2113) heap_init: Initializing. RAM available for dynamic allocation:
+D (2121) heap_init: New heap initialised at 0x3fca88a0
+I (2126) heap_init: At 3FCA88A0 len 00040E70 (259 KiB): RAM
+I (2132) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+D (2138) heap_init: New heap initialised at 0x3fcf0000
+I (2143) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+D (2150) heap_init: New heap initialised at 0x600fe058
+I (2155) heap_init: At 600FE058 len 00001F90 (7 KiB): RTCRAM
+D (2161) cpu_start: calling init function: 0x4200a6a0 on core: 0
+--- 0x4200a6a0: __esp_system_init_fn_esp_timer_init_nonos at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_timer/src/esp_timer_init.c:28
+D (2167) cpu_start: calling init function: 0x42009f94 on core: 0
+--- 0x42009f94: __esp_system_init_fn_init_libc at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/newlib/src/init.c:12
+D (2173) cpu_start: calling init function: 0x4200ae30 on core: 0
+--- 0x4200ae30: __esp_system_init_fn_add_psram_to_heap at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_psram/system_layer/esp_psram.c:123
+I (2180) esp_psram: Adding pool of 7360K of PSRAM memory to heap allocator
+D (2187) cpu_start: calling init function: 0x4200394c on core: 0
+--- 0x4200394c: __esp_system_init_fn_init_brownout at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:79
+V (2193) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2200) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (2208) intr_alloc: Connected src 39 to int 1 (cpu 0)
+D (2213) cpu_start: calling init function: 0x4200395c on core: 0
+--- 0x4200395c: __esp_system_init_fn_init_newlib_time at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:104
+D (2219) cpu_start: calling init function: 0x4200be8c on core: 0
+--- 0x4200be8c: __esp_system_init_fn_init_vfs_uart at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_driver_uart/src/uart_vfs.c:1148
+D (2225) cpu_start: calling init function: 0x4200d090 on core: 0
+--- 0x4200d090: __esp_system_init_fn_init_vfs_usj_sec at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c:669
+D (2231) cpu_start: calling init function: 0x4200eb34 on core: 0
+--- 0x4200eb34: __esp_system_init_fn_init_vfs_nullfs at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/vfs/nullfs.c:322
+D (2237) cpu_start: calling init function: 0x4200d308 on core: 0
+--- 0x4200d308: __esp_system_init_fn_init_vfs_console at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_vfs_console/vfs_console.c:271
+D (2243) cpu_start: calling init function: 0x42009fa0 on core: 0
+--- 0x42009fa0: __esp_system_init_fn_init_libc_stdio at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/newlib/src/init.c:18
+D (2250) cpu_start: calling init function: 0x42003968 on core: 0
+--- 0x42003968: __esp_system_init_fn_init_flash at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:111
+V (2256) memspi: raw_chip_id: 184046
+
+V (2259) memspi: chip_id: 464018
+
+V (2263) memspi: raw_chip_id: 184046
+
+V (2267) memspi: chip_id: 464018
+
+D (2270) spi_flash: trying chip: issi
+D (2274) spi_flash: trying chip: gd
+D (2277) spi_flash: trying chip: mxic
+D (2281) spi_flash: trying chip: winbond
+D (2285) spi_flash: trying chip: boya
+D (2289) spi_flash: trying chip: th
+D (2292) spi_flash: trying chip: mxic (opi)
+D (2297) spi_flash: trying chip: generic
+I (2301) spi_flash: detected chip: generic
+I (2305) spi_flash: flash io: qio
+D (2309) chip_generic: set_io_mode: status before 0x200
+V (2315) chip_generic: set_io_mode: status update 0x200
+W (2320) spi_flash: Detected size(16384k) larger than the size in the binary image header(4096k). Using the size in the binary image header.
+D (2333) cpu_start: calling init function: 0x42003518 on core: 0
+--- 0x42003518: __esp_system_init_fn_init_efuse at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/efuse/src/esp_efuse_startup.c:158
+D (2365) cpu_start: calling init function: 0x4203c1c4 on core: 0
+--- 0x4203c1c4: __esp_system_init_fn_esp_timer_init_os at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_timer/src/esp_timer.c:655
+V (2371) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2377) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xC02
+D (2386) intr_alloc: Connected src 59 to int 2 (cpu 0)
+D (2391) cpu_start: calling init function: 0x420bc2a4 on core: 0
+--- 0x420bc2a4: __esp_system_init_fn_esp_security_init at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_security/src/init.c:57
+D (2397) cpu_start: calling init function: 0x42006868 on core: 0
+--- 0x42006868: __esp_system_init_fn_esp_sleep_startup_init at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_hw_support/sleep_gpio.c:228
+I (2403) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (2410) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+D (2418) cpu_start: calling init function: 0x4200399c on core: 0
+--- 0x4200399c: __esp_system_init_fn_init_pm at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:145
+D (2435) cpu_start: calling init function: 0x420039a8 on core: 0
+--- 0x420039a8: __esp_system_init_fn_init_apb_dma at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:153
+D (2435) cpu_start: calling init function: 0x4200c934 on core: 0
+--- 0x4200c934: __esp_system_init_fn_usb_serial_jtag_conn_status_init at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c:75
+D (2436) cpu_start: calling init function: 0x420039b4 on core: 0
+--- 0x420039b4: __esp_system_init_fn_init_disable_rtc_wdt at /Users/aliceruehle/.espressif/v5.5.6/esp-idf/components/esp_system/startup_funcs.c:182
+V (2442) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2449) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E
+D (2457) intr_alloc: Connected src 79 to int 3 (cpu 0)
+D (2462) app_start: Starting scheduler on CPU0
+V (2467) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2467) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402
+D (2467) intr_alloc: Connected src 57 to int 5 (cpu 0)
+V (2467) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (2474) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x40E
+D (2482) intr_alloc: Connected src 80 to int 0 (cpu 1)
+D (2487) app_start: Starting scheduler on CPU1
+V (2491) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): checking args
+V (2498) intr_alloc: esp_intr_alloc_intrstatus (cpu 1): Args okay. Resulting flags 0x402
+D (2506) intr_alloc: Connected src 58 to int 1 (cpu 1)
+I (2467) main_task: Started on CPU0
+D (2516) heap_init: New heap initialised at 0x3fce9710
+I (2521) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+D (2530) esp_psram: Allocating block of size 32768 bytes
+V (2535) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args
+V (2541) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0xE
+D (2549) intr_alloc: Connected src 52 to int 8 (cpu 0)
+I (2555) main_task: Calling app_main()
+V (2559) partition: Loading the partition table
+V (2564) mmap: actual_mapped_len is 0x10000
+V (2568) calculated md5: 0x3fcaba98   e1 f5 8b aa b3 f8 03 e0  bc 2d ab 5e 16 9b 99 ab  |.........-.^....|
+V (2578) stored md5: 0x3c8680b0   e1 f5 8b aa b3 f8 03 e0  bc 2d ab 5e 16 9b 99 ab  |.........-.^....|
+V (2587) partition: Partition table MD5 verified
+I (2608) pp: pp rom version: e7ae62f
+I (2608) net80211: net80211 rom version: e7ae62f
+I (2610) wifi:wifi driver task: 3fced6b0, prio:23, stack:6656, core=0
+I (2621) wifi:wifi firmware version: c6dceae
+I (2621) wifi:wifi certification version: v7.0
+I (2621) wifi:config NVS flash: enabled
+I (2624) wifi:config nano formatting: disabled
+I (2628) wifi:Init data frame dynamic rx buffer num: 64
+I (2633) wifi:Init static rx mgmt buffer num: 5
+I (2638) wifi:Init management short buffer num: 32
+I (2642) wifi:Init static tx buffer num: 8
+I (2646) wifi:Init tx cache buffer num: 32
+I (2650) wifi:Init static tx FG buffer num: 2
+I (2654) wifi:Init static rx buffer size: 1600
+I (2658) wifi:Init static rx buffer num: 8
+I (2662) wifi:Init dynamic rx buffer num: 64
+D (2666) wifi:Reset scan defaults in ms : min,max,passive,chan_dwell :(0,120,360,30)
+V (2673) wifi:hint=255, act_dur=<0,120>, pas_dur=360, nchans=14 history_num=0
+I (2681) wifi_init: rx ba win: 16
+I (2684) wifi_init: accept mbox: 6
+I (2688) wifi_init: tcpip mbox: 32
+I (2692) wifi_init: udp mbox: 6
+I (2696) wifi_init: tcp mbox: 10
+I (2700) wifi_init: tcp tx win: 11680
+I (2704) wifi_init: tcp rx win: 11680
+I (2709) wifi_init: tcp mss: 1460
+I (2713) wifi_init: WiFi/LWIP prefer SPIRAM
+I (2718) wifi_init: WiFi IRAM OP enabled
+I (2722) wifi_init: WiFi RX IRAM OP enabled
+D (2728) wifi:clear blacklist
+I (2730) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10
+V (2766) wifi:ht20 freq=2412, chan=1
+D (2767) wifi:filter: set rx policy=0
+I (2767) wifi:mode : sta (14:c1:9f:2b:d1:d8)
+I (2768) wifi:enable tsf
+D (2768) wifi:filter: set rx policy=1
+D (2772) wifi:connect status 0 -> 0
+D (2776) wifi:Start wifi connect
+D (2778) wifi:connect status 0 -> 0
+D (2781) wifi:connect chan=0
+D (2784) wifi:first chan=1
+D (2786) wifi:connect status 0 -> 1
+D (2789) wifi:clear rc list
+D (2792) wifi:filter: set rx policy=3
+D (2795) wifi:clear scan ap list
+D (2798) wifi:start scan: type=0x50f, priority=2, cb=0x4207f220, arg=0x0, ss_state=0x1, time=2818302, index=0
+--- 0x4207f220: cnx_start_handoff_cb at ??:?
+V (2808) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (2813) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (2819) wifi:change: chan<1,0>, dur<0,120>
+V (2823) wifi:enter start op, arg=0x3fca7b34
+V (2827) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca7b34, status=0
+V (2834) wifi:scan specific ssid=CampfireSecrets
+V (2838) wifi:start max timer
+D (2841) wifi:rsn valid: gcipher=3 ucipher=3 akm=9 mac=dc:92:72:7a:50:0e
+V (2847) wifi:updated connection retries to 0
+D (2851) wifi:profile match: ss_state=0x7
+V (2855) wifi:scan histroy table is not full yet, add
+V (2859) wifi:add ssid=CampfireSecrets, chan=1 to scan history
+D (2865) wifi:rsn valid: gcipher=3 ucipher=3 akm=9 mac=dc:92:72:7a:50:0e
+D (2872) wifi:profile match: ss_state=0x7
+V (2875) wifi:update scan history ssid=CampfireSecrets, channel=1
+D (2881) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x7
+D (2887) wifi:find first mathched ssid, scan done
+V (2891) wifi:back home chan=<1,0>, current chan=<1,0>
+D (2896) wifi:filter: set rx policy=4
+D (2899) wifi:first chan=1
+V (2902) wifi:scan_done: arg=0x0, status=0, cur_time=2921668, scan_id=128, scan state=0
+V (2909) wifi:call scan_done cb, arg=0x0
+D (2913) wifi:handoff_cb: status=0
+V (2916) wifi:best bss has set.
+D (2919) wifi:ap found, mac=dc:92:72:7a:50:0e
+V (2923) wifi:bssid=dc:92:72:7a:50:0e, LR=0
+D (2927) wifi:going for connection with bssid=dc:92:72:7a:50:0e
+D (2933) wifi:new_bss=0x3fca6888, cur_bss=0x0, new_chan=<1,0>, cur_chan=1
+D (2939) wifi:filter: set rx policy=5
+D (2943) wifi:connect_op: status=0, auth=9, cipher=3 
+D (2947) wifi:auth mode is not none
+D (2950) wifi:connect_bss: auth=1, reconnect=0
+I (2955) wifi:state: init -> auth (0xb0)
+I (2960) WIFI_IF: wifi_init_sta finished. Trying to connect to CampfireSecrets
+I (2969) SC: Start codec chip
+I (2973) HAL: INIT
+I (2977) HAL: codec_hal done
+I (2977) AUDIO_BOARD: board-handle done
+I (2981) SC: Audio board_init done
+I (2985) AUDIO_HAL: Codec mode is 2, Ctrl:0
+I (2993) PLAYER: deinit player done
+I (2997) PLAYER: init player done
+I (3001) settings: settings_manager_init: Snapclient manager initialized
+D (3005) settings: settings_get_hostname: Hostname from CONFIG: ESP32-Caster
+I (3013) SC: Device hostname: ESP32-Caster
+I (3030) NETF: Setup mdns
+D (3041) settings: settings_get_mdns_enabled: entered
+D (3041) settings: settings_get_mdns_enabled: mdns from CONFIG_SNAPSERVER_USE_MDNS: 1
+I (3043) mdns_mem: mDNS task will be created from internal RAM
+I (3055) OTA: idf.py build ; curl snapclient.local:8032 --data-binary @- < build/snapclient.bin
+I (3059) CONNECTION_HANDLER: Wait for network connection
+I (3065) CONNECTION_HANDLER: test
+I (3059) pm: Frequency switching config: CPU_MAX: 240, APB_MAX: 80, APB_MIN: 40, Light sleep: ENABLED
+I (3080) sleep: Code start at 0x42000020, total 820230, data start at 0x3c000000, total 33554432 Bytes
+--- 0x42000020: _stext at ??:?
+D (3235) wifi:start 4000ms AUTH timer
+D (3236) wifi:clear scan ap list
+D (7236) wifi:auth timeout
+I (7236) wifi:state: auth -> init (0x200)
+D (7238) wifi:stop beacon and connect timers
+D (7238) wifi:connect status 1 -> 4
+D (7239) wifi:reason: auth expire(2)
+D (7242) wifi:add bssid dc:92:72:7a:50:0e to blacklist, cnt=0
+D (7247) wifi:stop CSA timer
+V (7250) wifi:bss connection retry cnt=0
+D (7253) wifi:remove dc:92:72:7a:50:0e from rc list
+D (7258) wifi:connect status 4 -> 0
+D (7261) wifi:filter: set rx policy=8
+D (7265) wifi:Send disconnect event, reason=2, AP number=0
+D (7271) wifi:Start wifi connect
+D (7273) wifi:connect status 0 -> 0
+D (7276) wifi:connect chan=0
+D (7279) wifi:first chan=1
+D (7281) wifi:connect status 0 -> 1
+D (7284) wifi:clear rc list
+D (7287) wifi:filter: set rx policy=3
+D (7290) wifi:clear scan ap list
+D (7293) wifi:start scan: type=0x50f, priority=2, cb=0x4207f220, arg=0x0, ss_state=0x1, time=7313098, index=0
+--- 0x4207f220: cnx_start_handoff_cb at ??:?
+V (7303) wifi:inter_channel_timeout: arg=0x0, ss_state=0x1
+D (7308) wifi:perform scan: ss_state=0x9, chan<1,0>, dur<0,120>
+V (7314) wifi:change: chan<1,0>, dur<0,120>
+V (7317) wifi:enter start op, arg=0x3fca7b34
+V (7321) wifi:scan operation: state=0x3, chan<1,0>, arg=0x3fca7b34, status=0
+V (7328) wifi:scan specific ssid=CampfireSecrets
+V (7333) wifi:start max timer
+D (7336) wifi:rsn valid: gcipher=3 ucipher=3 akm=9 mac=dc:92:72:7a:50:0e
+D (7342) wifi:find the dc:92:72:7a:50:0e in blacklist.
+
+V (7347) wifi:updated connection retries to 0
+D (7351) wifi:rsn valid: gcipher=3 ucipher=3 akm=9 mac=dc:92:72:7a:50:0e
+D (7357) wifi:find the dc:92:72:7a:50:0e in blacklist.
+
+D (7363) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (7368) wifi:perform scan: ss_state=0x9, chan<2,0>, dur<0,120>
+V (7373) wifi:change: chan<2,0>, dur<0,120>
+V (7377) wifi:ht20 freq=2417, chan=2
+V (7381) wifi:enter start op, arg=0x3fca7b34
+V (7385) wifi:scan operation: state=0x3, chan<2,0>, arg=0x3fca7b34, status=0
+V (7391) wifi:scan specific ssid=CampfireSecrets
+V (7396) wifi:start max timer
+D (7519) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (7519) wifi:perform scan: ss_state=0x9, chan<3,0>, dur<0,120>
+V (7519) wifi:change: chan<3,0>, dur<0,120>
+V (7523) wifi:ht20 freq=2422, chan=3
+V (7526) wifi:enter start op, arg=0x3fca7b34
+V (7530) wifi:scan operation: state=0x3, chan<3,0>, arg=0x3fca7b34, status=0
+V (7537) wifi:scan specific ssid=CampfireSecrets
+V (7541) wifi:start max timer
+D (7664) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (7664) wifi:perform scan: ss_state=0x9, chan<4,0>, dur<0,120>
+V (7665) wifi:change: chan<4,0>, dur<0,120>
+V (7668) wifi:ht20 freq=2427, chan=4
+V (7672) wifi:enter start op, arg=0x3fca7b34
+V (7676) wifi:scan operation: state=0x3, chan<4,0>, arg=0x3fca7b34, status=0
+V (7682) wifi:scan specific ssid=CampfireSecrets
+V (7687) wifi:start max timer
+D (7809) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (7810) wifi:perform scan: ss_state=0x9, chan<5,0>, dur<0,120>
+V (7810) wifi:change: chan<5,0>, dur<0,120>
+V (7814) wifi:ht20 freq=2432, chan=5
+V (7817) wifi:enter start op, arg=0x3fca7b34
+V (7821) wifi:scan operation: state=0x3, chan<5,0>, arg=0x3fca7b34, status=0
+V (7828) wifi:scan specific ssid=CampfireSecrets
+V (7832) wifi:start max timer
+D (7955) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (7955) wifi:perform scan: ss_state=0x9, chan<6,0>, dur<0,120>
+V (7956) wifi:change: chan<6,0>, dur<0,120>
+V (7959) wifi:ht20 freq=2437, chan=6
+V (7963) wifi:enter start op, arg=0x3fca7b34
+V (7966) wifi:scan operation: state=0x3, chan<6,0>, arg=0x3fca7b34, status=0
+V (7973) wifi:scan specific ssid=CampfireSecrets
+V (7978) wifi:start max timer
+D (8100) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (8101) wifi:perform scan: ss_state=0x9, chan<7,0>, dur<0,120>
+V (8101) wifi:change: chan<7,0>, dur<0,120>
+V (8105) wifi:ht20 freq=2442, chan=7
+V (8108) wifi:enter start op, arg=0x3fca7b34
+V (8112) wifi:scan operation: state=0x3, chan<7,0>, arg=0x3fca7b34, status=0
+V (8119) wifi:scan specific ssid=CampfireSecrets
+V (8123) wifi:start max timer
+D (8246) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (8246) wifi:perform scan: ss_state=0x9, chan<8,0>, dur<0,120>
+V (8247) wifi:change: chan<8,0>, dur<0,120>
+V (8250) wifi:ht20 freq=2447, chan=8
+V (8254) wifi:enter start op, arg=0x3fca7b34
+V (8257) wifi:scan operation: state=0x3, chan<8,0>, arg=0x3fca7b34, status=0
+V (8264) wifi:scan specific ssid=CampfireSecrets
+V (8269) wifi:start max timer
+D (8391) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (8392) wifi:perform scan: ss_state=0x9, chan<9,0>, dur<0,120>
+V (8392) wifi:change: chan<9,0>, dur<0,120>
+V (8396) wifi:ht20 freq=2452, chan=9
+V (8399) wifi:enter start op, arg=0x3fca7b34
+V (8403) wifi:scan operation: state=0x3, chan<9,0>, arg=0x3fca7b34, status=0
+V (8410) wifi:scan specific ssid=CampfireSecrets
+V (8414) wifi:start max timer
+D (8537) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (8537) wifi:perform scan: ss_state=0x9, chan<10,0>, dur<0,120>
+V (8538) wifi:change: chan<10,0>, dur<0,120>
+V (8541) wifi:ht20 freq=2457, chan=10
+V (8545) wifi:enter start op, arg=0x3fca7b34
+V (8549) wifi:scan operation: state=0x3, chan<10,0>, arg=0x3fca7b34, status=0
+V (8556) wifi:scan specific ssid=CampfireSecrets
+V (8560) wifi:start max timer
+D (8683) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (8683) wifi:perform scan: ss_state=0x9, chan<11,0>, dur<0,120>
+V (8683) wifi:change: chan<11,0>, dur<0,120>
+V (8687) wifi:ht20 freq=2462, chan=11
+V (8691) wifi:enter start op, arg=0x3fca7b34
+V (8694) wifi:scan operation: state=0x3, chan<11,0>, arg=0x3fca7b34, status=0
+V (8701) wifi:scan specific ssid=CampfireSecrets
+V (8706) wifi:start max timer
+D (8828) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (8829) wifi:perform scan: ss_state=0x9, chan<12,0>, dur<360,360>
+V (8829) wifi:change: chan<12,0>, dur<360,360>
+V (8833) wifi:ht20 freq=2467, chan=12
+V (8837) wifi:enter start op, arg=0x3fca7b34
+V (8841) wifi:scan operation: state=0x3, chan<12,0>, arg=0x3fca7b34, status=0
+V (8848) wifi:passive scan, listen only
+V (8851) wifi:start max timer
+D (9214) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (9214) wifi:perform scan: ss_state=0x9, chan<13,0>, dur<360,360>
+V (9214) wifi:change: chan<13,0>, dur<360,360>
+V (9219) wifi:ht20 freq=2472, chan=13
+V (9222) wifi:enter start op, arg=0x3fca7b34
+V (9226) wifi:scan operation: state=0x3, chan<13,0>, arg=0x3fca7b34, status=0
+V (9233) wifi:passive scan, listen only
+V (9236) wifi:start max timer
+D (9599) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+D (9599) wifi:perform scan: ss_state=0x9, chan<14,0>, dur<360,360>
+V (9600) wifi:change: chan<14,0>, dur<360,360>
+V (9604) wifi:ht20 freq=2484, chan=14
+V (9607) wifi:enter start op, arg=0x3fca7b34
+V (9611) wifi:scan operation: state=0x3, chan<14,0>, arg=0x3fca7b34, status=0
+V (9618) wifi:passive scan, listen only
+V (9622) wifi:start max timer
+D (9984) wifi:scan end: arg=0x3fca7b34, status=0, ss_state=0x3
+V (9985) wifi:back home chan=<1,0>, current chan=<14,0>
+V (9985) wifi:ht20 freq=2412, chan=1
+D (9988) wifi:filter: set rx policy=4
+D (9991) wifi:first chan=1
+V (9993) wifi:scan_done: arg=0x0, status=0, cur_time=10013198, scan_id=128, scan state=0
+V (10001) wifi:call scan_done cb, arg=0x0
+D (10005) wifi:handoff_cb: status=0
+D (10008) wifi:no ap found,connect to ap in blacklist
+D (10013) wifi:remove all except dc:92:72:7a:50:0e from rc list
+D (10018) wifi:clear blacklist
+V (10021) wifi:best bss has set.
+D (10024) wifi:ap found, mac=dc:92:72:7a:50:0e
+V (10028) wifi:bssid=dc:92:72:7a:50:0e, LR=0
+D (10032) wifi:going for connection with bssid=dc:92:72:7a:50:0e
+D (10038) wifi:new_bss=0x3fca6888, cur_bss=0x0, new_chan=<1,0>, cur_chan=1
+D (10045) wifi:filter: set rx policy=5
+D (10048) wifi:connect_op: status=0, auth=9, cipher=3 
+D (10053) wifi:auth mode is not none
+D (10056) wifi:connect_bss: auth=1, reconnect=0
+I (10060) wifi:state: init -> auth (0xb0)
+D (10338) wifi:start 4000ms AUTH timer
+D (10338) wifi:clear scan ap list
+D (10357) wifi:recv auth: seq=1, status=0, algo=3
+D (10580) wifi:recv auth: seq=2, status=0, algo=3
+I (10581) wifi:state: auth -> assoc (0x0)
+D (10582) wifi:restart connect 1000ms timer for assoc
+D (10592) wifi:recv assoc: type=0x10
+D (10592) wifi:filter: set rx policy=6
+I (10593) wifi:state: assoc -> run (0x10)
+D (10593) wifi:start 10s connect timer for 4 way handshake
+V (10598) wifi:wpa_psk start
+V (10602) wifi:wpa_psk handle succeed
+V (10604) wifi:tx process: alloc static tx buf, pb=0x0 l=144 hdr=0 data=144
+V (10615) wifi:wpa_psk start
+V (10618) wifi:wpa_psk handle succeed
+V (10618) wifi:tx process: alloc static tx buf, pb=0x0 l=113 hdr=0 data=113
+I (10624) wifi:connected with CampfireSecrets, aid = 29, channel 1, BW20, bssid = dc:92:72:7a:50:0e
+I (10632) wifi:security: WPA3-SAE HUNT_AND_PECK, phy: bgn, rssi: -54, cipher(pairwise:0x3, group:0x3), pmf:1
+D (10642) wifi:remove all except dc:92:72:7a:50:0e from rc list
+D (10648) wifi:clear blacklist
+D (10652) wifi:filter: set rx policy=7
+I (10654) wifi:pm start, type: 1
+
+I (10657) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (10665) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+D (10673) wifi:Send sta connected event
+D (10677) wifi:connect status 1 -> 5
+D (10680) wifi:obss scan is disabled
+D (10683) wifi:start obss scan: obss scan is stopped
+V (10689) wifi:tx process: alloc static tx buf, pb=0x3c140f94 l=350 hdr=0 data=350
+D (10695) wifi:eb is dhcp or dns sport = 68, dport = 67
+D (10700) wifi:bcnd: 0 -> 3144
+I (10703) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+D (11072) settings: settings_get_mdns_enabled: entered
+D (11073) settings: settings_get_mdns_enabled: mdns from CONFIG_SNAPSERVER_USE_MDNS: 1
+I (11075) CONNECTION_HANDLER: Enable mdns
+I (11079) CONNECTION_HANDLER: Lookup snapcast service on network
+V (11209) wifi:tx process: alloc static tx buf, pb=0x3c140f94 l=350 hdr=0 data=350
+I (11251) wifi:<ba-add>idx:0 (ifx:0, dc:92:72:7a:50:0e), tid:0, ssn:1, winSize:64
+V (11251) wifi:tx process: alloc static tx buf, pb=0x3c1416e8 l=350 hdr=0 data=350
+D (11254) wifi:eb is dhcp or dns sport = 68, dport = 67
+V (11296) wifi:tx process: alloc static tx buf, pb=0x3c1416e8 l=42 hdr=0 data=42
+V (11607) wifi:tx process: alloc static tx buf, pb=0x3c141004 l=42 hdr=0 data=42
+V (11796) wifi:tx process: alloc static tx buf, pb=0x3c141004 l=42 hdr=0 data=42
+I (11798) wifi:<ba-del>idx:0, tid:0
+I (11799) wifi:<ba-add>idx:0 (ifx:0, dc:92:72:7a:50:0e), tid:0, ssn:2, winSize:64
+I (12297) esp_netif_handlers: sta ip: 192.168.2.43, mask: 255.255.255.0, gw: 192.168.2.1
+I (12297) WIFI_IF: Wifi Got IP Address
+I (12299) WIFI_IF: ~~~~~~~~~~~
+I (12303) WIFI_IF: WIFIIP:192.168.2.43
+I (12307) WIFI_IF: WIFIMASK:255.255.255.0
+I (12312) WIFI_IF: WIFIGW:192.168.2.1
+I (12316) WIFI_IF: ~~~~~~~~~~~
+V (12321) wifi:tx process: alloc static tx buf, pb=0x3c141004 l=46 hdr=0 data=46
+V (12329) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V (12335) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=131 hdr=0 data=131
+V (12343) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=67 hdr=0 data=67
+V (12350) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V (12357) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=131 hdr=0 data=131
+V (12364) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=67 hdr=0 data=67
+V (12371) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V (12378) wifi:tx process: alloc static tx buf, pb=0x3c141090 l=133 hdr=0 data=133
+V (12386) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=67 hdr=0 data=67
+V (12393) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V (12400) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=131 hdr=0 data=131
+V (12407) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=67 hdr=0 data=67
+V (12414) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V (12421) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=131 hdr=0 data=131
+V (12429) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=67 hdr=0 data=67
+V (12436) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V (12443) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=133 hdr=0 data=133
+V (12450) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=67 hdr=0 data=67
+V (12457) wifi:tx process: alloc static tx buf, pb=0x3c14107c l=81 hdr=0 data=81
+V 

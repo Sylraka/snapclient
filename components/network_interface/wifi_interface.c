@@ -83,6 +83,10 @@ static SemaphoreHandle_t connIpSemaphoreHandle = NULL;
 // Event handler for catching system events
 static void event_handler(void *arg, esp_event_base_t event_base, int event_id,
                           void *event_data) {
+                            wifi_event_sta_disconnected_t *disconn = event_data;
+
+  //ESP_LOGI(TAG, "my own1info: Wi-Fi disconnected; reason=%d", disconn->reason);
+  //ESP_LOGV(TAG, "my own1verbose: Wi-Fi disconnected; reason=%d", disconn->reason);
   if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
     esp_wifi_connect();
   } else if (event_base == WIFI_EVENT &&
@@ -158,7 +162,8 @@ static void lost_ip_event_handler(void *arg, esp_event_base_t event_base,
   connected = false;
 
   xSemaphoreGive(connIpSemaphoreHandle);
-
+  //ESP_LOGI(TAG, "my own2: Wi-Fi disconnected; reason=%d", event_data);
+  //ESP_LOGW(TAG, "my own3: Wi-Fi disconnected; reason=%d", event_data);
   ESP_LOGI(TAG, "Wifi Lost IP Address");
 }
 

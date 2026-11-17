@@ -24,6 +24,7 @@ void setup_network(esp_netif_t** netif) {
     }
 
     ESP_LOGI(TAG, "Wait for network connection");
+    ESP_LOGI(TAG, "test");
 #if CONFIG_SNAPCLIENT_USE_INTERNAL_ETHERNET || \
     CONFIG_SNAPCLIENT_USE_SPI_ETHERNET
     esp_netif_t* eth_netif =
