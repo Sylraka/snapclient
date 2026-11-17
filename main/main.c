@@ -1354,7 +1354,7 @@ void app_main(void) {
 //  ESP_ERROR_CHECK(nvs_flash_erase());
   ESP_ERROR_CHECK(ret);
 
-  esp_log_level_set("*", ESP_LOG_INFO);
+   esp_log_level_set("*", ESP_LOG_INFO);
 
   // if enabled these cause a timer srv stack overflow
   esp_log_level_set("HEADPHONE", ESP_LOG_NONE);
@@ -1362,8 +1362,8 @@ void app_main(void) {
   esp_log_level_set("uart", ESP_LOG_WARN);
   // esp_log_level_set("i2s_std", ESP_LOG_DEBUG);
   // esp_log_level_set("i2s_common", ESP_LOG_DEBUG);
-  esp_log_level_set("wifi", ESP_LOG_WARN);
-  esp_log_level_set("wifi_init", ESP_LOG_WARN);
+  esp_log_level_set("wifi", ESP_LOG_INFO);
+  esp_log_level_set("wifi_init", ESP_LOG_INFO);
   esp_log_level_set("httpd_uri", ESP_LOG_WARN);
   esp_log_level_set("settings", ESP_LOG_DEBUG);
   esp_log_level_set("dsp_settings", ESP_LOG_DEBUG);

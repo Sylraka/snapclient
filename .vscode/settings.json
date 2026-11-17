@@ -1,0 +1,15 @@
+{
+    "idf.currentSetup": "/Users/aliceruehle/.espressif/v5.5.6/esp-idf",
+    "idf.flashType": "JTAG",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.port": "/dev/tty.usbmodem11101",
+    "clangd.path": "/Users/aliceruehle/.espressif/tools/esp-clang/esp-19.1.2_20250312/esp-clang/bin/clangd",
+    "clangd.arguments": [
+      "--background-index",
+      "--query-driver=**",
+      "--compile-commands-dir=/Users/aliceruehle/Repositorys/arduino_sonos_system/snapcast_snapclient/snapclient/build"
+    ],
+    "idf.customExtraVars": {}
+}
